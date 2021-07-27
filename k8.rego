@@ -1,5 +1,5 @@
 
-package policy["com.styra.kubernetes.validating"].rules.rules
+data.global.istio.mesh
 
 monitor[decision] {
   data.library.v1.kubernetes.admission.workload.v1.expect_container_resource_requests[message]
