@@ -18,7 +18,7 @@ allow {
 }
 
 is_get {
-	input.attributes.request.http.method == "POST"
+	input.attributes.request.http.method == "GET"
 }
 
 
