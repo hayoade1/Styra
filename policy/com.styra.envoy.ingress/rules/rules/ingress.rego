@@ -26,14 +26,6 @@ is_get {
 
 claims := payload {
 
-	# This statement invokes the built-in function `io.jwt.decode` passing the
-	# parsed bearer_token as a parameter. The `io.jwt.decode` function returns an
-	# array:
-	#
-	#	[header, payload, signature]
-	#
-	# In Rego, you can pattern match values using the `=` and `:=` operators. This
-	# example pattern matches on the result to obtain the JWT payload.
 	[_, payload, _] := io.jwt.decode(bearer_token)
 }
 
