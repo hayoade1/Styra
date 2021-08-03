@@ -9,7 +9,7 @@ default allow = false
 # allow health checks of the opa sidecar
 allow {
     parsed_path[0] == "health"
-    http_request.method == "GET"
+    http_request.method == "POST"
 }
 
 allow {
